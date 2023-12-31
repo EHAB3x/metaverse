@@ -4,10 +4,10 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import {staggerContainer } from '../utils/motion';
+import { staggerContainer } from '../utils/motion';
 
 import { ExploreCard, TitleText, TypingText } from '../components';
-import{exploreWorlds} from '../constants';
+import { exploreWorlds } from '../constants';
 
 const Explore = () => {
   const [active, setActive] = useState('world-2');
@@ -27,7 +27,7 @@ const Explore = () => {
         />
 
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {exploreWorlds.map((world, index)=>(
+          {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}
               {...world}
